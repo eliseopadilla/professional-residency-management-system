@@ -1,0 +1,28 @@
+/* Estilo global */
+
+
+/*___MAIN__*/
+.number{
+    font-size: medium;
+    font-weight: 400;
+}
+.chart{
+    font-family: Arial, sans-serif;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+.chart-h2{
+    margin-bottom: 5px;
+    font-size: 20px;
+    color:#666;
+    text-align: center;
+}
+
+body{
+    background-image: url(../imagenes/img/fondo1.jpg); 
+}
+

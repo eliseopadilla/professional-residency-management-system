@@ -1,0 +1,166 @@
+
+h1 {
+    margin-top: 5%;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: left;            /*  izquierda */
+    width: 150px;           /* Ajusta el tamaño  */
+    height: auto;           /* Mantiene la proporción  */
+    margin-right: center;
+    height: auto;
+    color: #000000;
+    text-shadow: 0px 0px 10px #87b7f6,
+                 0px 0px 10px #87b7f6,
+                 0px 0px 10px #87b7f6,
+                 0px 0px 10px #87b7f6;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #052161;
+    text-shadow: 0px 0px 10px #3098bb,
+                 0px 0px 10px #3098bb,
+                 0px 0px 10px #d6f4fe,
+                 0px 0px 10px #3098bb;
+}
+
+.barra-azul {
+    width: 100%;
+    height: 120px;
+    background-color: rgba(3,120,191,0.8);
+    backdrop-filter: blur(10px);
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px #025c9d,
+                 0px 0px 10px #198aaf,
+                 0px 0px 10px #3b95b3,
+                 0px 0px 10px #2680ff;
+    line-height: 100px;
+    
+    
+}
+.table{
+    margin-left: 20px;
+    display: block; /* Hace que el cuerpo de la tabla sea desplazable */
+    max-height: 400px; /* Limita la altura del cuerpo de la tabla */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 70%;
+    overflow-y: auto; /* Habilita el scroll solo en el cuerpo de la tabla */
+    border: 1px solid #c5ecf4; /* Borde del contenedor */
+    
+}
+
+
+/* Estilos generales para la página */
+body {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5eefa;
+}
+
+/* Contenedor principal de los comentarios */
+.comentarios-container {
+    display: block;
+    
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: flex-start;       /* Alineamos los elementos al principio */
+
+    background-color: white;
+    padding: 1px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(64, 121, 255, 0.1);
+}
+
+/* Estilos para el título */
+h22{
+    font-size: 24px;
+    color: #3f53ff;
+    text-align: center;
+    font-style: unset;
+}
+
+/* Estilo para el área de texto */
+textarea {
+    width: 95%;
+    height: 60%;
+    padding: 10px;
+    font-size: 15px;
+    
+    border: 1px solid #b7f4ff;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-style: unset;
+}
+
+/* Estilo para el botón */
+button {
+    display: block;
+    background-color: rgba(3,120,191,0.8);
+    backdrop-filter: blur(10px);
+    color: rgb(230, 247, 255);
+    border: none;
+    border-radius: 8px;
+    
+    padding: 20px 30px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Estilo para el contenedor de comentarios */
+.comentarios {
+    display: block;
+    margin-left: 30px;  /* Deja un espacio de 30px entre la tabla y los comentarios */
+    border: 1px solid #ccc; /* Agrega un borde para el contenedor de comentarios */
+    padding: 10px;
+    width: 300px;  
+    
+}
+
+/* Estilo para cada comentario */
+.comentario {
+    width: 100%;
+    background-color: #c6dff7;
+    padding: 10px;
+    margin: 10px 0;
+    
+    border-radius: 4px; /* Ajusta el valor según el nivel de redondez que desees */
+    border: 1px solid #ccc;
+    box-shadow: 30px 10px 5px rgba(0, 0, 0, 0.1);
+    font-style: unset;
+    width: 95%;
+    color: #000000;
+
+    display: block;
+    /* Eliminamos las propiedades que causan el scroll */
+
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 70% 30%; /* Divide la pantalla en 2 partes iguales */
+    gap: 1px; /* Esto agrega una separación de 8px entre las dos columnas */
+    height: 90%;
+}
+
+
+img {
+    float: right;         /* Coloca la imagen a la izquierda */
+    width: 250px;        /* Ajusta el tamaño de la imagen */
+    height: auto;        /* Mantiene la proporción de la imagen */
+    margin-right: 15px;  /* Espacio a la derecha de la imagen */
+}
+
+body{
+    background-image: url(../imagenes/img/fondo1.jpg); 
+}

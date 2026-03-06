@@ -1,0 +1,377 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("imagenes/fondo.jpeg") ;
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos de la tabla */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    background-color: #34495e;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+/* Estilos para celdas editables */
+.editable {
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.editable:hover {
+    background-color: #f0f8ff;
+}
+
+.editable-input {
+    width: 60px;
+    padding: 2px 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Estilos de botones */
+.btn {
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    transition: all 0.15s;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #2196F3;
+    border-color: #2196F3;
+}
+
+.btn-primary:hover {
+    background-color: #0b7dda;
+    border-color: #0a74d0;
+}
+
+.btn-warning {
+    color: #212529;
+    background-color: #ff9800;
+    border-color: #ff9800;
+}
+
+.btn-warning:hover {
+    background-color: #e68a00;
+    border-color: #db8300;
+}
+
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+.document-viewer {
+    width: 100%;
+    height: 80vh;
+    border: none;
+    margin-top: 20px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .table-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .table {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .table thead, .table tbody, .table th, .table td, .table tr {
+        display: block;
+    }
+    
+    .table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    .table tr {
+        border: 1px solid #ccc;
+        margin-bottom: 15px;
+    }
+    
+    .table td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+    
+    .table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+    }
+    
+    .document-viewer {
+        height: 70vh;
+    }
+}
+
+/* Estilos para la sección de comentarios */
+#comentarios {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #dee2e6;
+}
+
+#comentarios h3 {
+    color: #34495e;
+    font-weight: 600;
+}
+
+#comentarios .card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+#comentarios .form-control {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+}
+
+#comentarios .form-control:focus {
+    border-color: #34495e;
+    box-shadow: 0 0 0 0.25rem rgba(76, 175, 80, 0.25);
+}
+
+#comentarios .btn-success {
+    background-color: #34495e;
+    border-color: #34495e;
+}
+
+#comentarios .btn-success:hover {
+    background-color: #34495e;
+    border-color: #34495e;
+}
+
+/* Estilos para la lista de comentarios */
+#listaComentarios h4 {
+    color: #34495e;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.list-group-item {
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem !important;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.list-group-item h5 {
+    color: #34495e;
+}
+
+/* Estilos responsivos para comentarios */
+@media (max-width: 768px) {
+    #comentarios {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+    }
+    
+    #comentarios .d-flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    #comentarios .form-check {
+        margin-bottom: 1rem;
+    }
+    
+    #comentarios .btn-success {
+        width: 100%;
+    }
+}
+}
+
+
+/* Estilos específicos para el modal de perfil (versión no editable) */
+#profileModal .modal-content {
+  border: 2px solid #0d6efd;
+  border-radius: 10px;
+}
+
+#profileModal .modal-body {
+  background-color: white;
+  padding: 25px;
+}
+
+#profileModal .form-control.bg-light {
+  background-color: #f8f9fa !important;
+  border: 1px solid #dee2e6;
+  cursor: default !important;
+}
+
+#profileModal .form-label {
+  font-weight: 500;
+  color: #495057;
+  margin-bottom: 0.25rem;
+}
+
+/* Estilos para la foto de perfil */
+#profileModal .position-relative {
+  margin-bottom: 1.5rem;
+}
+
+#profileModal .rounded-circle {
+  object-fit: cover;
+}
+
+/* Fondo del modal más transparente */
+.modal-backdrop {
+  opacity: 0.5 !important; /* Ajusta la opacidad del fondo gris */
+  background-color: #000 !important; /* Color del fondo */
+}
+
+/* Contenido del modal más destacado */
+.modal-content {
+  border: none !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) !important; /* Sombra más pronunciada */
+  border-radius: 10px !important;
+}
+
+/* Header del modal */
+.modal-header {
+  background-color: #0d6efd !important; /* Color primario de Bootstrap */
+  color: white !important;
+  border-bottom: none !important;
+  border-radius: 10px 10px 0 0 !important;
+}
+
+/* Body del modal */
+.modal-body {
+  padding: 25px !important;
+  background-color: white !important; /* Fondo blanco sólido */
+}
+
+/* Botón de cerrar */
+.btn-close {
+  filter: invert(1) !important; /* Hace el icono de cerrar blanco */
+  opacity: 1 !important;
+}
+.modal-backdrop {
+  display: none !important;
+}
+/* Estilos para el modal de éxito */
+#successModal .modal-content {
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#successModal .modal-header {
+    border-bottom: none;
+    padding: 1.5rem;
+}
+
+#successModal .modal-body {
+    padding: 2rem;
+}
+
+#successModal .fa-check-circle {
+    animation: bounceIn 0.5s;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); opacity: 1; }
+}
